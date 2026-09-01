@@ -1,0 +1,56 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #000; color: #fff; font-family: Arial, sans-serif; }
+
+/* HERO - Background Image */
+.hero {
+  height: 85vh;
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1574267432553-4b4628081c31');
+  background-size: cover;
+  background-position: center;
+  border-bottom: 8px solid #222;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  align-items: center;
+}
+.logo { color: #e50914; font-size: 32px; font-weight: 900; }
+.navbar select, .sign-in-btn {
+  padding: 6px 15px; margin-left: 10px; border-radius: 4px;
+}
+.sign-in-btn { background: #e50914; color: white; border: none; font-weight: bold; cursor: pointer; }
+
+.hero-content {
+  text-align: center;
+  margin-top: 120px;
+  padding: 0 20px;
+}
+.hero-content h1 { font-size: 48px; font-weight: 900; line-height: 1.1; }
+.hero-content p { font-size: 22px; margin: 15px 0; }
+.get-started { display: flex; justify-content: center; gap: 8px; margin-top: 20px; flex-wrap: wrap; }
+.email-input {
+  width: 380px; padding: 15px; font-size: 16px;
+  background: rgba(0,0,0,0.5); border: 1px solid #555; color: white; border-radius: 4px;
+}
+.get-started-btn {
+  background: #e50914; color: white; border: none;
+  padding: 12px 25px; font-size: 20px; font-weight: bold; border-radius: 4px; cursor: pointer;
+}
+
+/* TRENDING - Tere wala sahi hai, bas polish */
+.movies { padding: 30px 50px; }
+.movie-row { display: flex; gap: 15px; overflow-x: auto; scroll-behavior: smooth; margin-top: 15px; }
+.movie-row::-webkit-scrollbar { display: none; }
+.movie-card img { width: 180px; border-radius: 5px; transition: 0.3s; cursor: pointer; }
+.movie-card img:hover { transform: scale(1.08); }
+
+/* FAQ - Tere wala */
+.faq { padding: 40px 20%; border-bottom: 8px solid #222; border-top: 8px solid #222; }
+.faq h2 { text-align: center; font-size: 35px; margin-bottom: 20px; }
+.faq-item { background: #2d2d2d; margin-bottom: 8px; }
+.faq-question { width: 100%; background: #2d2d2d; color: #fff; border: none; padding: 20px; font-size: 22px; display: flex; justify-content: space-between; cursor: pointer; }
+.faq-answer { display: none; padding: 20px; border-top: 1px solid #000; text-align: left; font-size: 20px; }
+.faq-answer.active { display: block; }
+
+footer { text-align: center; padding: 30px; color: #777; }
